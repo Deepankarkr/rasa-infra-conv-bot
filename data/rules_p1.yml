@@ -17,6 +17,7 @@ rules:
   steps:
   - intent: job_setup
   - action: utter_job_setup
+  - action: action_job_setup
   - action: utter_goodbye
 
 - rule: Respond to Linux commands query

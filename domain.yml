@@ -28,7 +28,6 @@ intents:
   - email_configuration
   - access_control
 
-
 responses:
   utter_greet:
   - text: "Hey! How are you?"
@@ -113,3 +112,7 @@ session_config:
 entities:
   - job_code
   - server_name
+
+actions:
+  - action_job_setup
+  - action_hello_world
