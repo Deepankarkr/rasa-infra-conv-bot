@@ -1,0 +1,211 @@
+version: "3.1"
+
+nlu:
+- regex: job_code
+  examples: |
+    - [0-9]{5,7}
+
+- regex: server_name
+  examples: |
+    - [a-zA-Z]{3}-[a-zA-Z]{3}-[a-zA-Z]{4}
+
+
+- intent: job_setup
+  examples: |
+    - How do I set up a new job?
+    - What is the process for job setup?
+    - Can you help me with setting up a job?
+    - How to configure a job on the server?
+    - Steps to create a new job.
+    - How do I create a new job?
+    - What are the steps to create a job?
+    - Can you guide me through job creation?
+    - How do I cancel a job?
+    - What is the process to cancel a job?
+    - Steps to cancel a job.
+    - How do I reschedule a job?
+    - What are the steps for job rescheduling?
+    - Can you help me reschedule a job?
+    - How do I opt-out of a job?
+    - What is the process for job opt-out?
+    - Steps to opt-out from a job.
+    - How do I check the status of a job?
+    - What is the job status?
+    - How to get the current status of a job?
+    - Can you provide job details?
+    - How do I find job details?
+    - What information can you give about a job?
+    - How to view the details of a job?
+    - How do I set up job [12345](job_code)?
+    - Cancel job [67890](job_code) for me.
+    - I need to reschedule job [54321](job_code).
+    - Opt-out of job [98765](job_code).
+    - What is the status of job [23456](job_code)?
+    - Provide details for job [34567](job_code).
+
+
+- intent: linux_commands
+  examples: |
+    - What are the common Linux commands?
+    - Can you list some basic Linux commands?
+    - How do I use Linux commands?
+    - Explain some important Linux commands.
+    - Guide me through basic Linux commands.
+
+- intent: unix_commands
+  examples: |
+    - What are some useful Unix commands?
+    - How do I execute Unix commands?
+    - Give me examples of Unix commands.
+    - Can you explain Unix commands to me?
+    - List some essential Unix commands.
+
+
+- intent: rhel_support
+  examples: |
+    - How do I get support for RHEL?
+    - What are the common issues in RHEL?
+    - Can you help me with RHEL problems?
+    - How to troubleshoot RHEL errors?
+    - Steps to get RHEL support.
+
+- intent: ansible_playbooks
+  examples: |
+    - How do I write an Ansible playbook?
+    - What is an Ansible playbook?
+    - Can you explain Ansible playbooks?
+    - Give me an example of an Ansible playbook.
+    - How to create a playbook in Ansible?
+
+- intent: operating_system_info
+  examples: |
+    - What operating systems are supported?
+    - Can you list all supported operating systems?
+    - How do I check my operating system version?
+    - Explain the different operating systems we use.
+    - What OS versions are compatible?
+
+- intent: user_management
+  examples: |
+    - How do I add a new user?
+    - What is the command to create a user?
+    - Can you help me with user management?
+    - Steps to delete a user.
+    - How to modify user details?
+
+- intent: login_issues
+  examples: |
+    - How do I resolve login issues?
+    - What should I do if I can't log in?
+    - Can you help me with login problems?
+    - Why can't I access my account?
+    - Steps to troubleshoot login errors.
+
+
+- intent: incident_reporting
+  examples: |
+    - How do I respond to system incidents?
+    - What are the steps for incident response?
+    - Can you guide me through the incident management process?
+    - Steps to handle and resolve incidents.
+    - How to document and learn from incidents?
+    - How do I report an incident?
+    - What are the steps for incident reporting?
+    - Can you guide me through the incident reporting process?
+    - Steps to document and report incidents.
+    - How to follow up on reported incidents?
+    - What information is required to report an incident?
+    - How do I prioritize incidents?
+    - How to escalate an incident?
+    - How to create an incident report?
+    - Can you provide a template for incident reporting?
+    - How to track the status of a reported incident?
+
+
+- intent: employee_information
+  examples: |
+    - How do I find employee information?
+    - What details can I get about an employee?
+    - Can you show me the employee directory?
+    - Steps to look up an employee.
+    - How to get employee contact information?
+
+- intent: manager_approval
+  examples: |
+    - How do I request manager approval?
+    - What is the process for getting manager approval?
+    - Can you guide me through the approval process?
+    - How to send a request for approval to my manager?
+    - What steps do I need to follow for manager approval?
+
+- intent: approval_status
+  examples: |
+    - How do I check my approval status?
+    - What is the status of my approval?
+    - Can you update me on my approval request?
+    - Steps to check approval status.
+    - How to find out if my request is approved?
+
+- intent: server_status
+  examples: |
+    - How do I check server status?
+    - What is the current status of our servers?
+    - Can you provide the server status?
+    - How to monitor server status?
+    - Steps to get server status updates.
+
+
+- intent: disk_space_management
+  examples: |
+    - How do I manage disk space?
+    - What are the commands to check disk space?
+    - Can you help me free up disk space?
+    - Steps to monitor disk usage.
+    - How to clean up unnecessary files?
+
+- intent: server_patching
+  examples: |
+    - How do I patch a server?
+    - What are the steps to apply server patches?
+    - Can you guide me through server patching?
+    - Explain the process of server patching.
+    - What patches are available for our servers?
+
+
+- intent: compliance_checks
+  examples: |
+    - How do I perform compliance checks?
+    - What are the steps for ensuring compliance?
+    - Can you help me with compliance audit?
+    - Steps to verify system compliance.
+    - How to prepare for compliance audits?
+
+- intent: server_maintenance
+  examples: |
+    - How do I perform server maintenance?
+    - What are the steps for regular server maintenance?
+    - Can you guide me through server maintenance tasks?
+    - Steps to ensure server health.
+    - How to schedule server maintenance?
+
+- intent: email_configuration
+  examples: |
+    - How do I configure email settings?
+    - What are the steps to set up email notifications?
+    - Can you help me with email server configuration?
+    - Steps to ensure email delivery.
+    - How to troubleshoot email issues?
+
+
+- intent: access_control
+  examples: |
+    - How do I configure access control?
+    - What are the best practices for access control?
+    - Can you help me set up user permissions?
+    - Steps to implement access control policies.
+    - How to review and update access control settings?
+    - How to set up role-based access control?
+    - How to manage user roles and permissions?
+    - How to audit access control logs?
+    - How to revoke access for a user?
+    - What tools can I use for access control management?

@@ -1,0 +1,110 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - action: utter_cheer_up
+
+- rule: Respond to job setup
+  steps:
+  - intent: job_setup
+  - action: utter_job_setup
+  - action: utter_goodbye
+
+- rule: Respond to Linux commands query
+  steps:
+  - intent: linux_commands
+  - action: utter_linux_commands
+
+- rule: Respond to Unix commands query
+  steps:
+  - intent: unix_commands
+  - action: utter_unix_commands
+
+- rule: Respond to RHEL support query
+  steps:
+  - intent: rhel_support
+  - action: utter_rhel_support
+
+- rule: Respond to Ansible playbooks query
+  steps:
+  - intent: ansible_playbooks
+  - action: utter_ansible_playbooks
+
+- rule: Respond to operating system info query
+  steps:
+  - intent: operating_system_info
+  - action: utter_operating_system_info
+
+- rule: Respond to user management query
+  steps:
+  - intent: user_management
+  - action: utter_user_management
+
+- rule: Respond to login issues query
+  steps:
+  - intent: login_issues
+  - action: utter_login_issues
+
+- rule: Respond to incident reporting query
+  steps:
+  - intent: incident_reporting
+  - action: utter_incident_reporting
+
+- rule: Respond to employee information query
+  steps:
+  - intent: employee_information
+  - action: utter_employee_information
+
+- rule: Respond to manager approval query
+  steps:
+  - intent: manager_approval
+  - action: utter_manager_approval
+
+- rule: Respond to approval status query
+  steps:
+  - intent: approval_status
+  - action: utter_approval_status
+
+- rule: Respond to server status query
+  steps:
+  - intent: server_status
+  - action: utter_server_status
+
+- rule: Respond to disk space management query
+  steps:
+  - intent: disk_space_management
+  - action: utter_disk_space_management
+
+- rule: Respond to server patching query
+  steps:
+  - intent: server_patching
+  - action: utter_server_patching
+
+- rule: Respond to compliance checks query
+  steps:
+  - intent: compliance_checks
+  - action: utter_compliance_checks
+
+- rule: Respond to server maintenance query
+  steps:
+  - intent: server_maintenance
+  - action: utter_server_maintenance
+
+- rule: Respond to email configuration query
+  steps:
+  - intent: email_configuration
+  - action: utter_email_configuration
+
+- rule: Respond to access control query
+  steps:
+  - intent: access_control
+  - action: utter_access_control

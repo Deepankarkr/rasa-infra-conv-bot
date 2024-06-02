@@ -1,0 +1,333 @@
+version: "3.1"
+
+nlu:
+# - intent: server_restart
+#   examples: |
+#     - How do I restart a server?
+#     - What is the command to restart a server?
+#     - Can you show me how to reboot a server?
+#     - I need to restart a server, how do I do it?
+#     - Guide me through server restart process.
+
+# - intent: data_migration
+#   examples: |
+#     - How do I migrate data to a new server?
+#     - What are the steps for data migration?
+#     - Can you guide me through the data migration process?
+#     - Steps to transfer data between servers.
+#     - How to ensure data integrity during migration?
+
+# - intent: application_deployment
+#   examples: |
+#     - How do I deploy an application?
+#     - What is the process for application deployment?
+#     - Can you guide me through deploying an app?
+#     - Steps to deploy applications on the server.
+#     - How to ensure a successful application deployment?
+
+# - intent: network_configuration
+#   examples: |
+#     - How do I configure the network settings?
+#     - What are the steps to set up network configuration?
+#     - Can you help me with network settings?
+#     - Steps to configure network interfaces.
+#     - How to troubleshoot network configuration issues?
+
+# - intent: firewall_settings
+#   examples: |
+#     - How do I configure firewall settings?
+#     - What are the recommended firewall settings?
+#     - Can you help me set up a firewall?
+#     - Steps to configure a firewall on the server.
+#     - How to update firewall rules?
+
+# - intent: hardware_monitoring
+#   examples: |
+#     - How do I monitor hardware status?
+#     - What tools can I use for hardware monitoring?
+#     - Can you guide me through hardware monitoring?
+#     - Steps to check hardware health.
+#     - How to troubleshoot hardware issues?
+
+# - intent: scripting_automation
+#   examples: |
+#     - How do I automate tasks with scripts?
+#     - What are the best practices for scripting automation?
+#     - Can you help me write automation scripts?
+#     - Steps to create and execute scripts.
+#     - How to use scripts to automate server tasks?
+
+# - intent: system_logging
+#   examples: |
+#     - How do I manage system logs?
+#     - What are the steps to configure logging?
+#     - Can you guide me through log management?
+#     - Steps to analyze and rotate logs.
+#     - How to troubleshoot issues using system logs?
+
+# - intent: configuration_management
+#   examples: |
+#     - How do I manage system configurations?
+#     - What are the tools for configuration management?
+#     - Can you help me with configuration files?
+#     - Steps to backup and restore configurations.
+#     - How to ensure consistent configuration across servers?
+
+# - intent: containerization
+#   examples: |
+#     - How do I set up containers?
+#     - What are the best practices for containerization?
+#     - Can you guide me through using Docker?
+#     - Steps to create and manage containers.
+#     - How to troubleshoot container issues?
+
+# - intent: load_testing
+#   examples: |
+#     - How do I perform load testing?
+#     - What tools can I use for load testing?
+#     - Can you guide me through the load testing process?
+#     - Steps to set up and execute load tests.
+#     - How to analyze load testing results?
+
+# - intent: backup_procedures
+#   examples: |
+#     - How do I back up my data?
+#     - What are the backup procedures?
+#     - Can you guide me through data backup?
+#     - Steps to create a backup.
+#     - How to ensure my data is backed up?
+
+# - intent: virtualization
+#   examples: |
+#     - How do I set up virtualization?
+#     - What are the steps for configuring virtual machines?
+#     - Can you help me with virtualization settings?
+#     - Steps to create and manage virtual machines.
+#     - How to troubleshoot virtualization issues?
+
+
+# - intent: cloud_integration
+#   examples: |
+#     - How do I integrate with cloud services?
+#     - What are the steps for cloud integration?
+#     - Can you guide me through connecting to cloud platforms?
+#     - Steps to migrate services to the cloud.
+#     - How to ensure seamless cloud integration?
+
+
+# - intent: encryption
+#   examples: |
+#     - How do I encrypt data?
+#     - What are the best practices for encryption?
+#     - Can you help me set up data encryption?
+#     - Steps to ensure data is encrypted.
+#     - How to manage encryption keys?
+
+# - intent: vpn_setup
+#   examples: |
+#     - How do I set up a VPN?
+#     - What are the steps to configure a VPN?
+#     - Can you guide me through VPN setup?
+#     - Steps to secure a VPN connection.
+#     - How to troubleshoot VPN issues?
+
+# - intent: auditing
+#   examples: |
+#     - How do I perform an audit?
+#     - What are the steps for auditing systems?
+#     - Can you help me with audit procedures?
+#     - Steps to ensure compliance through audits.
+#     - How to document audit findings?
+
+# - intent: software_licensing
+#   examples: |
+#     - How do I manage software licenses?
+#     - What are the best practices for software licensing?
+#     - Can you help me with license management?
+#     - Steps to ensure compliance with licensing.
+#     - How to renew software licenses?
+
+# - intent: performance_monitoring
+#   examples: |
+#     - How do I monitor system performance?
+#     - What tools can I use for performance monitoring?
+#     - Can you help me set up performance monitoring?
+#     - Steps to analyze performance metrics.
+#     - How to optimize system performance?
+
+# - intent: backup_verification
+#   examples: |
+#     - How do I verify backups?
+#     - What are the steps for backup verification?
+#     - Can you guide me through the backup verification process?
+#     - Steps to ensure backups are reliable.
+#     - How to restore from a backup to test it?
+
+# - intent: threat_detection
+#   examples: |
+#     - How do I detect security threats?
+#     - What are the best practices for threat detection?
+#     - Can you help me set up threat detection systems?
+#     - Steps to identify and respond to threats.
+#     - How to analyze security threats?
+
+# - intent: system_monitoring
+#   examples: |
+#     - How do I monitor system performance?
+#     - What tools can I use for system monitoring?
+#     - Can you explain system monitoring?
+#     - Steps to set up system monitoring.
+#     - How to check system performance metrics?
+
+    
+# - intent: disaster_recovery
+#   examples: |
+#     - How do I plan for disaster recovery?
+#     - What are the steps for disaster recovery?
+#     - Can you guide me through the disaster recovery process?
+#     - Steps to create a disaster recovery plan.
+#     - How to ensure business continuity during disasters?
+
+# - intent: performance_tuning
+#   examples: |
+#     - How do I tune system performance?
+#     - What are the best practices for performance tuning?
+#     - Can you help me optimize system performance?
+#     - Steps to identify performance bottlenecks.
+#     - How to enhance overall system performance?
+
+
+# - intent: security_settings
+#   examples: |
+#     - How do I configure security settings?
+#     - What are the recommended security settings?
+#     - Can you help me with security configurations?
+#     - Steps to enhance system security.
+#     - How to update security settings?
+
+# - intent: software_installation
+#   examples: |
+#     - How do I install new software?
+#     - What is the process for software installation?
+#     - Can you guide me through software installation?
+#     - Steps to install software on the server.
+#     - How to ensure software is installed correctly?
+
+# - intent: system_update
+#   examples: |
+#     - How do I update the system?
+#     - What are the steps for a system update?
+#     - Can you help me update the system?
+#     - How to perform a system update?
+#     - Steps to check for system updates.
+
+# - intent: troubleshooting
+#   examples: |
+#     - How do I troubleshoot system issues?
+#     - What are the common troubleshooting steps?
+#     - Can you help me with troubleshooting?
+#     - Steps to diagnose system problems.
+#     - How to fix common system errors?
+
+# - intent: database_management
+#   examples: |
+#     - How do I manage databases?
+#     - What are the common database management commands?
+#     - Can you help me with database configuration?
+#     - Steps to back up and restore databases.
+#     - How to monitor database performance?
+
+# - intent: software_updates
+#   examples: |
+#     - How do I update installed software?
+#     - What are the steps to check for software updates?
+#     - Can you guide me through software updates?
+#     - Steps to ensure software is up-to-date.
+#     - How to troubleshoot software update issues?
+
+# - intent: remote_access
+#   examples: |
+#     - How do I set up remote access?
+#     - What are the steps for configuring remote access?
+#     - Can you help me with remote access settings?
+#     - Steps to enable remote access on the server.
+#     - How to secure remote access?
+
+# - intent: system_backup
+#   examples: |
+#     - How do I back up the entire system?
+#     - What are the steps for system backup?
+#     - Can you guide me through creating a system backup?
+#     - Steps to ensure a complete system backup.
+#     - How to restore a system from a backup?
+
+# - intent: service_management
+#   examples: |
+#     - How do I manage services on the server?
+#     - What are the commands to start and stop services?
+#     - Can you help me configure service management?
+#     - Steps to monitor and restart services.
+#     - How to ensure critical services are running?
+
+# - intent: network_security
+#   examples: |
+#     - How do I enhance network security?
+#     - What are the steps to secure the network?
+#     - Can you help me configure network security settings?
+#     - Steps to protect against network threats.
+#     - How to implement network security best practices?
+
+# - intent: system_upgrade
+#   examples: |
+#     - How do I upgrade the system?
+#     - What are the steps for a system upgrade?
+#     - Can you guide me through the upgrade process?
+#     - Steps to ensure a smooth system upgrade.
+#     - How to troubleshoot system upgrade issues?
+
+# - intent: patch_management
+#   examples: |
+#     - How do I manage patches?
+#     - What are the steps for patch management?
+#     - Can you help me with patching procedures?
+#     - Steps to apply and verify patches.
+#     - How to automate patch management?
+
+# - intent: load_balancing
+#   examples: |
+#     - How do I configure load balancing?
+#     - What are the steps to set up load balancing?
+#     - Can you help me with load balancer settings?
+#     - Steps to ensure even distribution of load.
+#     - How to troubleshoot load balancing issues?
+
+
+# - intent: ssl_certificate
+#   examples: |
+#     - How do I install an SSL certificate?
+#     - What are the steps to configure SSL?
+#     - Can you help me with SSL certificate installation?
+#     - Steps to renew an SSL certificate.
+#     - How to troubleshoot SSL certificate issues?
+
+# - intent: log_analysis
+#   examples: |
+#     - How do I analyze system logs?
+#     - What tools can I use for log analysis?
+#     - Can you guide me through log analysis?
+#     - Steps to identify issues from logs.
+#     - How to set up log monitoring?
+
+# - intent: api_management
+#   examples: |
+#     - How do I manage APIs?
+#     - What are the steps for API management?
+#     - Can you help me with API configuration?
+#     - Steps to create and secure APIs.
+#     - How to monitor API usage?
+#     - What tools are available for API management?
+#     - How do I document API endpoints?
+#     - What is the best way to version APIs?
+#     - How to handle API authentication?
+#     - How to set rate limits for APIs?
+#     - Can you show me how to use an API gateway?

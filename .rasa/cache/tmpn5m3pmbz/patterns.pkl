@@ -1,0 +1,10 @@
+[
+  {
+    "name": "job_code",
+    "pattern": "[0-9]{5,7}"
+  },
+  {
+    "name": "server_name",
+    "pattern": "[a-zA-Z]{3}-[a-zA-Z]{3}-[a-zA-Z]{4}"
+  }
+]

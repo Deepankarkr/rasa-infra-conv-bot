@@ -1,0 +1,115 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - job_setup
+  - linux_commands
+  - unix_commands
+  - rhel_support
+  - ansible_playbooks
+  - operating_system_info
+  - user_management
+  - login_issues
+  - incident_reporting
+  - employee_information
+  - manager_approval
+  - approval_status
+  - server_status
+  - disk_space_management
+  - server_patching
+  - compliance_checks
+  - server_maintenance
+  - email_configuration
+  - access_control
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_job_setup:
+  - text: "Here is the response for job setup."
+
+  utter_linux_commands:
+  - text: "Here is the response for linux commands."
+
+  utter_unix_commands:
+  - text: "Here is the response for unix commands."
+
+  utter_rhel_support:
+  - text: "Here is the response for RHEL support."
+
+  utter_ansible_playbooks:
+  - text: "Here is the response for Ansible playbooks."
+
+  utter_operating_system_info:
+  - text: "Here is the response for operating system info."
+
+  utter_user_management:
+  - text: "Here is the response for user management."
+
+  utter_login_issues:
+  - text: "Here is the response for login issues."
+
+  utter_incident_reporting:
+  - text: "Here is the response for incident reporting."
+
+  utter_employee_information:
+  - text: "Here is the response for employee information."
+
+  utter_manager_approval:
+  - text: "Here is the response for manager approval."
+
+  utter_approval_status:
+  - text: "Here is the response for approval status."
+
+  utter_server_status:
+  - text: "Here is the response for server status."
+
+  utter_disk_space_management:
+  - text: "Here is the response for disk space management."
+
+  utter_server_patching:
+  - text: "Here is the response for server patching."
+
+  utter_compliance_checks:
+  - text: "Here is the response for compliance checks."
+
+  utter_server_maintenance:
+  - text: "Here is the response for server maintenance."
+
+  utter_email_configuration:
+  - text: "Here is the response for email configuration."
+
+  utter_access_control:
+  - text: "Here is the response for access control."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+entities:
+  - job_code
+  - server_name
